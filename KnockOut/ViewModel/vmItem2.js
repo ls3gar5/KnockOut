@@ -36,6 +36,7 @@
 
 
         this.noEsOnservable = "EDADSSD",
+        this.PruebaObservable = "LALALALAAL",
         this.link = "http://www.holistor.com.ar",
         this.firstName = ko.observable("Jose"),
         this.lastName = ko.observable("Mendoza"),
