@@ -10,7 +10,7 @@
             //current model and the DOM event
             toastr.info(model.firstName() + " " + model.lastName(), "Prueba toaster");
             if (event.ctrlKey) {
-                toastr.info("He wasAAAAAAAAAAAeason", "Key Press");
+                toastr.info("He was wewewewewewewe the Control Key for som,e reason", "Key Press");
             }
             
         };
