@@ -1,0 +1,29 @@
+C:\Users\Leonardo\Box Sync\Cursos\KnockOut\Examples\KnockOut (lsegars@gmail.com)\KnockOut\bin\KnockOut.dll.config
+C:\Users\Leonardo\Box Sync\Cursos\KnockOut\Examples\KnockOut (lsegars@gmail.com)\KnockOut\bin\KnockOut.dll
+C:\Users\Leonardo\Box Sync\Cursos\KnockOut\Examples\KnockOut (lsegars@gmail.com)\KnockOut\bin\KnockOut.pdb
+C:\Users\Leonardo\Box Sync\Cursos\KnockOut\Examples\KnockOut (lsegars@gmail.com)\KnockOut\obj\Debug\KnockOut.dll
+C:\Users\Leonardo\Box Sync\Cursos\KnockOut\Examples\KnockOut (lsegars@gmail.com)\KnockOut\obj\Debug\KnockOut.pdb
+C:\Users\leonardo.HOLISTOR\Box Sync\Cursos\KnockOut\Examples\KnockOut (lsegars@gmail.com)\KnockOut\bin\KnockOut.dll.config
+C:\Users\leonardo.HOLISTOR\Box Sync\Cursos\KnockOut\Examples\KnockOut (lsegars@gmail.com)\KnockOut\bin\KnockOut.dll
+C:\Users\leonardo.HOLISTOR\Box Sync\Cursos\KnockOut\Examples\KnockOut (lsegars@gmail.com)\KnockOut\bin\KnockOut.pdb
+C:\Users\leonardo.HOLISTOR\Box Sync\Cursos\KnockOut\Examples\KnockOut (lsegars@gmail.com)\KnockOut\obj\Debug\KnockOut.csprojResolveAssemblyReference.cache
+C:\Users\leonardo.HOLISTOR\Box Sync\Cursos\KnockOut\Examples\KnockOut (lsegars@gmail.com)\KnockOut\obj\Debug\KnockOut.dll
+C:\Users\leonardo.HOLISTOR\Box Sync\Cursos\KnockOut\Examples\KnockOut (lsegars@gmail.com)\KnockOut\obj\Debug\KnockOut.pdb
+C:\Users\Leonardo\Box Sync\Cursos\KnockOut\Examples\KnockOut2\KnockOut\bin\KnockOut.dll.config
+C:\Users\Leonardo\Box Sync\Cursos\KnockOut\Examples\KnockOut2\KnockOut\bin\KnockOut.dll
+C:\Users\Leonardo\Box Sync\Cursos\KnockOut\Examples\KnockOut2\KnockOut\bin\KnockOut.pdb
+C:\Users\Leonardo\Box Sync\Cursos\KnockOut\Examples\KnockOut2\KnockOut\obj\Debug\KnockOut.csprojResolveAssemblyReference.cache
+C:\Users\Leonardo\Box Sync\Cursos\KnockOut\Examples\KnockOut2\KnockOut\obj\Debug\KnockOut.dll
+C:\Users\Leonardo\Box Sync\Cursos\KnockOut\Examples\KnockOut2\KnockOut\obj\Debug\KnockOut.pdb
+C:\Users\leonardo.HOLISTOR\Box Sync\Cursos\KnockOut\Examples\KnockOut2\KnockOut\bin\KnockOut.dll.config
+C:\Users\leonardo.HOLISTOR\Box Sync\Cursos\KnockOut\Examples\KnockOut2\KnockOut\bin\KnockOut.dll
+C:\Users\leonardo.HOLISTOR\Box Sync\Cursos\KnockOut\Examples\KnockOut2\KnockOut\bin\KnockOut.pdb
+C:\Users\leonardo.HOLISTOR\Box Sync\Cursos\KnockOut\Examples\KnockOut2\KnockOut\obj\Debug\KnockOut.csprojResolveAssemblyReference.cache
+C:\Users\leonardo.HOLISTOR\Box Sync\Cursos\KnockOut\Examples\KnockOut2\KnockOut\obj\Debug\KnockOut.dll
+C:\Users\leonardo.HOLISTOR\Box Sync\Cursos\KnockOut\Examples\KnockOut2\KnockOut\obj\Debug\KnockOut.pdb
+C:\Users\Leo\Downloads\KnockOut\Examples\KnockOut2\KnockOut\bin\KnockOut.dll.config
+C:\Users\Leo\Downloads\KnockOut\Examples\KnockOut2\KnockOut\bin\KnockOut.dll
+C:\Users\Leo\Downloads\KnockOut\Examples\KnockOut2\KnockOut\bin\KnockOut.pdb
+C:\Users\Leo\Downloads\KnockOut\Examples\KnockOut2\KnockOut\obj\Debug\KnockOut.csprojResolveAssemblyReference.cache
+C:\Users\Leo\Downloads\KnockOut\Examples\KnockOut2\KnockOut\obj\Debug\KnockOut.dll
+C:\Users\Leo\Downloads\KnockOut\Examples\KnockOut2\KnockOut\obj\Debug\KnockOut.pdb

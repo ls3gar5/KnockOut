@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Interactive Bindings</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../content/style.css" />
+    <link rel="stylesheet" href="../content/toastr.css" />
+    <script type="text/javascript" src="../Scripts/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="../Scripts/knockout-3.1.0.debug.js"></script>
+    <script type="text/javascript" src="../Scripts/toastr.js"></script>
+    <script type="text/javascript" src="../ViewModel/vmItem17.js"></script>
+</head>
+<body>
+    <h1>Interactive Bindings</h1>
+    
+    <form action="#" method="post">
+
+        <label>Nombre: <input data-bind="value:firstName"/></label> <br />
+        <label>Apellido: <input data-bind="value:lastName" /></label>
+
+        <p><button data-bind="click: saveUserData">Submit</button></p>
+        <p>
+            <button data-bind="click: displayName">Display Name</button>
+            <button data-bind="click: setName">Set Name</button>
+        </p>
+    </form>
+
+    
+</body>
+</html>
