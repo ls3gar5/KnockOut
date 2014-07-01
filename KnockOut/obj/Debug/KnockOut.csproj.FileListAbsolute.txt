@@ -33,3 +33,9 @@ C:\Users\Leo\Documents\GitHub\KnockOut\KnockOut\bin\KnockOut.pdb
 C:\Users\Leo\Documents\GitHub\KnockOut\KnockOut\obj\Debug\KnockOut.csprojResolveAssemblyReference.cache
 C:\Users\Leo\Documents\GitHub\KnockOut\KnockOut\obj\Debug\KnockOut.dll
 C:\Users\Leo\Documents\GitHub\KnockOut\KnockOut\obj\Debug\KnockOut.pdb
+D:\C#\KnockOut\KnockOut\bin\KnockOut.dll.config
+D:\C#\KnockOut\KnockOut\bin\KnockOut.dll
+D:\C#\KnockOut\KnockOut\bin\KnockOut.pdb
+D:\C#\KnockOut\KnockOut\obj\Debug\KnockOut.csprojResolveAssemblyReference.cache
+D:\C#\KnockOut\KnockOut\obj\Debug\KnockOut.dll
+D:\C#\KnockOut\KnockOut\obj\Debug\KnockOut.pdb
