@@ -16,7 +16,7 @@
         };
 
         this.displayName = function (model, event) {
-            toastr.info(model.firstName() + " " + model.lastName(), "Info");
+            toastr.info(model.firstName() + " " + model.lastName(), "Infos");
         };
 
         this.setName = function (model, event) {
