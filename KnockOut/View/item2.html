@@ -14,9 +14,11 @@
     <h1>Hello, KnockOut.js</h1>
     <p>Bill's Shopping Cart (sin KnockOut o sea duro)</p>
     <!-- las variables tiene final () para ser el GET. Si ("adasd") es el SET-->
-    <p data-bind="text:firstName() + ' - ' + lastName() + ' - Edad:' + age()"></p>
+    <p><span data-bind="html:fullNamePlasAge()"></span> prueba spannnnananana</p>
     <p data-bind="html:formattedName()"></p>
-    <p><a data-bind="attr:{href: featuredProduct().link}">View Dateils</a></p>
+    <p data-bind="with: featuredProduct">
+        <a data-bind="attr:{href:link}">View Dateils</a>
+    </p>
     <div class="supersaver">
         <span style="font-weight:bold" data-bind="text:fullName()"></span>
     </div>
@@ -25,6 +27,7 @@
         <label> Ingrese un nombre:</label>
         <input type="text" name="nameValue" id="newNameValue" />
         <button data-bind="click:cambiarNombre"> Cambiar Nombre</button>
+        <input type="checkbox" name="chkSelec" id="chkActivo" data-bind="checked: wantsSpam" />
         <p data-bind="with: featuredProduct"> 
             Do you need <strong data-bind="text:name"></strong>?<br/>
             Get one now for only => <strong data-bind="text:price"></strong>
@@ -54,7 +57,7 @@
                 <td data-bind="foreach: tags">
                     <span data-bind="text:$parent.name"></span> - <span data-bind="text:$data"></span>
                 </td>
-                <td data-bind="if: discount() > 0" style="color: red"> You saved <span data-bind="text:formattedDiscount, css:{supersaver: discount() > .15}"></span>!!!</td>
+                <td data-bind="if: discount() > 0" style="color: red"> You saved <span data-bind="text:formattedDiscount, css:{supersaver: discount() > .15}"></span><strong>!!!</strong></td>
                 <!--ESTE CASO HAY Q PONER $ROOT PARA Q BUSQUE EL METODO EN EL MODELO Y NO EN LA INSTANCIA DE PRODUCTO Q TIENE EL ARRAY</td>-->
                 <td><button data-bind="click:$parent.removeProduct">Remove</button></td>
                 <td><button data-bind="click:$parent.addPorcentaje">Add 10%</button></td>
@@ -100,10 +103,5 @@
     //}, null, "beforeChange");
 
     // personViewModel.firstName.extend({ rateLimit: 5000 });
-
-   
-
-
-
 
 </script>-->
