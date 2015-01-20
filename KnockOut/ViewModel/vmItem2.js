@@ -34,16 +34,19 @@
             "hideMethod": "fadeOut"
         };
 
-
-        this.noEsOnservable = "EDADSSD",
-        this.PruebaObservable = "LALALALAAL",
+        this.noEsOnservable = "'Dato duro de una variable no observable'",
+        this.PruebaObservable = "PruebaObservable",
         this.link = "http://www.holistor.com.ar",
-        this.firstName = ko.observable("Jose"),
+        this.firstName = ko.observable("Jose"), //valor inicial de firstname
         this.lastName = ko.observable("Mendoza"),
         this.age = ko.observable(35),
 
         this.fullName = ko.computed(function () {
             return this.firstName() + "  " + this.lastName() + " - " + ko.utils.unwrapObservable(this.noEsOnservable);
+        }, this);
+
+        this.fullNamePlasAge = ko.computed(function () {
+            return "<strong> Nombre Completo:  </strong>" + this.firstName() + "  " + this.lastName() + " - <strong>Edad: </strong>" + this.age();
         }, this);
 
         this.formattedName = ko.computed(function () {
@@ -54,16 +57,17 @@
             toastr.info("Esto esta muy bueno", "Prueba toaster");
         },
 
+        this.wantsSpam = ko.observable(true) // Initially checked
+
         this.firstName.subscribe(function (newValue) {
             alert("the person new names is:" + newValue)
         }),
 
-        this.firstName.extend({ rateLimit: 5000 }),
-
+        //Se inicializa el array shoppingCart con 3 elementos
         this.shoppingCart = ko.observableArray([
             new Product("Beer", 10.99, null, .20),
             new Product("Brats", 7.99),
-            new Product("Buns", 1.49, ["lala1", "lala2"]),
+            new Product("Buns", 1.49, [" Descriptor 1 ", " Descriptor 2 "]),
         ]),
 
         this.addProduct = function () {
@@ -111,7 +115,8 @@
         this.removeProduct = function (product) {
             //ACA UTILIZO SELF DADO Q EN EJECUCION THIS HACE REFERENCIA A LA INSTANCIA DE PRODUCTO SELECCIONADA
             self.shoppingCart.remove(product);
-            alert("Cantidad de elementos restantes: " + self.shoppingCart().length);
+            toastr.info("Cantidad de elementos restantes: " + self.shoppingCart().length,"Remover Artículo")
+            //alert("Cantidad de elementos restantes: " + self.shoppingCart().length);
         },
 
         this.getTotal = function () {
@@ -130,7 +135,8 @@
             for (var i = 0; i < nativeArray.length; i++) {
                 message += nativeArray[i].name() + "\n";
             }
-            alert(message);
+            toastr.info(message);
+            //alert(message);
         };
 
         this.featuredProduct = ko.observable(new Product("Acme BBQ Sauce", 3.99, null, null, "http://www.holistor.com.ar"));
