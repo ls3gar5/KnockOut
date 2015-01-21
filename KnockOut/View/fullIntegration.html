@@ -3,23 +3,63 @@
 <head>
     <title>Integración de los Ejercicios de KnockOut JS</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="../content/bootstrap.css" />
     <link rel="stylesheet" href="../content/style.css" />
     <link rel="stylesheet" href="../content/toastr.css" />
+    <link rel="stylesheet" href="../content/font-awesome.css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script type="text/javascript" src="../Scripts/jquery-2.1.3.js"></script>
     <script type="text/javascript" src="../Scripts/knockout-3.2.0.js"></script>
     <script type="text/javascript" src="../Scripts/toastr.js"></script>
+    <script type="text/javascript" src="../Scripts/bootstrap.js"></script>
     <script type="text/javascript" src="../ViewModel/fullIntegration.js"></script>
 </head>
 <body>
     <h2>Primer Ejercicio</h2>
     <p><span data-bind="text: firstName() + ' ' + lastName()"></span>'s Shopping Carts - Prueba computada en el HTML</p>
     <p><span data-bind="text: fullName"></span>'s Shopping Carts - <strong> de una computada</strong></p>
-    
+
     <h2>Usando Toastr en un Boton</h2>
     <div>
         <button data-bind="click: checkOut"> Probar </button>
+        <button type="button" class="btn-info" data-bind="click: checkOut">
+            <i class="icon-shopping-cart icon-large"></i> Probar
+        </button>
     </div>
 
-
+    <h2>Observable Arrays</h2>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-horizontal">
+                <div class="col-sm-6">
+                    <ul data-bind="foreach: shoppingCart">
+                        <li style="">
+                            <i class="icon-beer"></i>
+                            <span data-bind="text: name"></span>
+                            <span data-bind="text: price"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Product</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody data-bind="foreach: shoppingCart">
+                            <tr>
+                                <td><i class="icon-beer"></i></td>
+                                <td data-bind="text: name"></td>
+                                <td data-bind="text: price"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
