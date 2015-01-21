@@ -68,8 +68,10 @@
     <Content Include="Scripts\knockout-3.2.0.js" />
     <Content Include="Scripts\toastr.js" />
     <Content Include="Scripts\toastr.min.js" />
+    <Content Include="ViewModel\fullIntegration.js" />
     <Content Include="ViewModel\vmItem17.js" />
     <Content Include="View\extendTest.html" />
+    <Content Include="View\fullIntegration.html" />
     <Content Include="View\index.html" />
     <Content Include="View\item17.html" />
     <Content Include="View\item2.html" />

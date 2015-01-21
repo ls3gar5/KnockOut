@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Integración de los Ejercicios de KnockOut JS</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../content/style.css" />
+    <link rel="stylesheet" href="../content/toastr.css" />
+    <script type="text/javascript" src="../Scripts/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="../Scripts/knockout-3.2.0.js"></script>
+    <script type="text/javascript" src="../Scripts/toastr.js"></script>
+    <script type="text/javascript" src="../ViewModel/fullIntegration.js"></script>
+</head>
+<body>
+    <h2>Primer Ejercicio</h2>
+    <p><span data-bind="text: firstName() + ' ' + lastName()"></span>'s Shopping Carts - Prueba computada en el HTML</p>
+    <p><span data-bind="text: fullName"></span>'s Shopping Carts - <strong> de una computada</strong></p>
+    
+    <h2>Usando Toastr en un Boton</h2>
+    <div>
+        <button data-bind="click: checkOut"> Probar </button>
+    </div>
+
+
+</body>
+</html>
