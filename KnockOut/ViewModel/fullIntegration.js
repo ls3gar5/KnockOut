@@ -9,6 +9,8 @@
     function PersonViewModel() {
 
         var self = this;
+        //etiquetas
+        self.titulo = ko.observable("Mensaje");;
 
         //Observables
         self.firstName = ko.observable("Leo");
@@ -19,15 +21,21 @@
             return self.firstName() + " - " + self.lastName();
         });
 
-        self.checkOut = function () {
-            toastr.info(self.fullName(), "Buenas y santas")
-        };
-
         self.shoppingCart = ko.observableArray([
             new Product("Beer", 10.99),
             new Product("Brats", 7.99),
             new Product("Buns", 1.49)
         ]);
+
+        //METODOS - FUNCIONES
+        self.checkOut = function () {
+            self.titulo("Mensaje Enviado!!")
+            toastr.info(self.fullName(), "Buenas y santas")
+        };
+
+        self.addProduct = function () {
+            self.shoppingCart.push(new Product("More Beer", 10.99));
+        };
 
     };
 
