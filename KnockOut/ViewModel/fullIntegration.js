@@ -12,11 +12,12 @@
         //etiquetas
         self.titulo = ko.observable("Mensaje");;
 
-        //Observables
+        //OBSERVABLES
         self.firstName = ko.observable("Leo");
         self.lastName = ko.observable("Segars");
+        
 
-        //Computed Observables
+        //COMPUTED OBSERVABLES
         self.fullName = ko.computed(function () {
             return self.firstName() + " - " + self.lastName();
         });
@@ -27,6 +28,10 @@
             new Product("Buns", 1.49)
         ]);
 
+        self.cantidadRegistros = ko.computed(function () {
+            return self.shoppingCart().length;
+        });
+
         //METODOS - FUNCIONES
         self.checkOut = function () {
             self.titulo("Mensaje Enviado!!")
@@ -35,6 +40,10 @@
 
         self.addProduct = function () {
             self.shoppingCart.push(new Product("More Beer", 10.99));
+        };
+
+        self.removeProduct = function (product) {
+            self.shoppingCart.remove(product);
         };
 
     };

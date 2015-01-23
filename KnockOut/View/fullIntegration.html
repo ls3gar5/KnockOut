@@ -26,15 +26,15 @@
         </button>
     </div>
 
-    <div class="row">
+    <div class="row form-horizontal">
         <div class="col-sm-6">
             <div class="col-sm-6">
                 <h2>Observable Arrays</h2>
             </div>
             <div class="col-sm-2">
                 <button type="button" class="btn btn-success" data-bind="click:addProduct">
-                    <i class="fa fa-plus fa-4x"></i>
-                    <i class="fa fa-beer fa-4x"></i>
+                    <i class="fa fa-plus fa-3x"></i>
+                    <i class="fa fa-beer fa-3x"></i>
                 </button>
             </div>
         </div>
@@ -53,7 +53,7 @@
                     <table class="table table-striped table-bordered table-hover">
                         <thead>
                             <tr>
-                                <th></th>
+                                <th><span class="badge pull-right" data-bind="text:cantidadRegistros"></span></th>
                                 <th>Product</th>
                                 <th>Price</th>
                                 <th>Link</th>
@@ -65,7 +65,12 @@
                                 <td align="center"><i class="fa fa-beer"></i></td>
                                 <td align="center" data-bind="text: name"></td>
                                 <td align="center" data-bind="text: price"></td>
-                                <td><button type="button" class="btn btn-link">Holistor</button></td>
+                                <td>
+                                    <button type="button" class="btn btn-success" data-bind="click: $root.removeProduct">
+                                        <i class="fa fa-minus fa-3x"></i>
+                                        <i class="fa fa-beer fa-3x"></i>
+                                    </button>
+                                </td>
                             </tr>
                             <!-- /ko -->
                         </tbody>
