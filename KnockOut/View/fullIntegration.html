@@ -12,6 +12,7 @@
     <script type="text/javascript" src="../Scripts/toastr.js"></script>
     <script type="text/javascript" src="../Scripts/bootstrap.js"></script>
     <script type="text/javascript" src="../ViewModel/fullIntegration.js"></script>
+    <script type="text/javascript" src="../Scripts/moment.js"></script>
 </head>
 <body>
     <h2>Primer Ejercicio</h2>
@@ -19,6 +20,7 @@
     <p><span data-bind="text: fullName"></span>'s Shopping Carts - <strong> de una computada</strong></p>
 
     <h2>Usando Toastr en un Boton</h2>
+    
     <div>
         <button data-bind="click: checkOut"> CheckOut </button>
         <button type="button" class="btn-info" data-bind="click: checkOut">
@@ -56,6 +58,7 @@
                                 <th><span class="badge pull-right" data-bind="text:cantidadRegistros"></span></th>
                                 <th>Product</th>
                                 <th>Price</th>
+                                <th>Time</th>
                                 <th>Link</th>
                             </tr>
                         </thead>
@@ -65,6 +68,7 @@
                                 <td align="center"><i class="fa fa-beer"></i></td>
                                 <td align="center" data-bind="text: name"></td>
                                 <td align="center" data-bind="text: price"></td>
+                                <td align="center" data-bind="text: $root.getDate"></td>
                                 <td>
                                     <button type="button" class="btn btn-success" data-bind="click: $root.removeProduct">
                                         <i class="fa fa-minus fa-3x"></i>

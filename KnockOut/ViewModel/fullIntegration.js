@@ -46,6 +46,10 @@
             self.shoppingCart.remove(product);
         };
 
+        self.getDate = ko.computed(function () {
+           return moment().format('DD/MM/YYYY HH:mm:ss:SSS');
+        });
+
     };
 
     toastr.options = {
