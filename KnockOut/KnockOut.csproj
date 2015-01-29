@@ -90,6 +90,11 @@
     <Content Include="Scripts\require.js" />
     <Content Include="Scripts\toastr.js" />
     <Content Include="Scripts\toastr.min.js" />
+    <Content Include="Scripts\underscore-ko-1.6.0.js" />
+    <Content Include="Scripts\underscore-ko-1.6.0.min.js" />
+    <Content Include="Scripts\underscore-min.js" />
+    <Content Include="Scripts\underscore.js" />
+    <Content Include="ViewModel\full.js" />
     <Content Include="ViewModel\fullIntegration.js" />
     <Content Include="ViewModel\vmItem17.js" />
     <Content Include="View\extendTest.html" />
@@ -107,6 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-2.1.3.min.map" />
+    <Content Include="Scripts\underscore-min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

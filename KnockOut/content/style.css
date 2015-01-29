@@ -54,6 +54,10 @@ th, td {
   padding: .1em .5em;
 }
 
+td {
+    text-align: center;
+}
+
 td li, td ul {
   margin: 0;
   padding: 0;

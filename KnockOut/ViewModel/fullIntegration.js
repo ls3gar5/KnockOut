@@ -1,10 +1,14 @@
 ﻿$(document).ready(function () {
 
-    function Product(name, price) {
+    function Product(name, price, tags) {
         this.name = ko.observable(name);
         this.price = ko.observable(price);
+        this.tag = ko.observableArray(tags);
     }
 
+    function GetDate() {
+        return moment().format('DD/MM/YYYY HH:mm:ss:SSS');
+    }
 
     function PersonViewModel() {
 
@@ -15,7 +19,7 @@
         //OBSERVABLES
         self.firstName = ko.observable("Leo");
         self.lastName = ko.observable("Segars");
-        
+
 
         //COMPUTED OBSERVABLES
         self.fullName = ko.computed(function () {
@@ -23,32 +27,60 @@
         });
 
         self.shoppingCart = ko.observableArray([
-            new Product("Beer", 10.99),
-            new Product("Brats", 7.99),
-            new Product("Buns", 1.49)
+            new Product("Beer", 10.99, ["Baked goods", "Hot dogs"]),
+            new Product("Brats", 7.99, null),
+            new Product("Buns", 1.49, null)
         ]);
 
         self.cantidadRegistros = ko.computed(function () {
             return self.shoppingCart().length;
         });
 
+        self.totalImporte = ko.computed(function () {
+            var total = 0;
+            //ko.utils.arrayForEach(self.shoppingCart(), function (art) {
+            //    total += art.price();
+            //});
+            _.each(self.shoppingCart(), function (art) {
+                var value = parseFloat(art.price());
+                if (!isNaN(value)) {
+                    total += value;
+                }
+            });
+            return total.toFixed(2);
+        });
         //METODOS - FUNCIONES
         self.checkOut = function () {
             self.titulo("Mensaje Enviado!!")
             toastr.info(self.fullName(), "Buenas y santas")
         };
 
-        self.addProduct = function () {
-            self.shoppingCart.push(new Product("More Beer", 10.99));
+        self.addProduct = function (product) {
+            if (product && typeof !_.isUndefined(product.nombre)) {
+                self.shoppingCart.push(new Product(product.nombre(), product.precio(), ["Leo awesome!!!!"]));
+            } else {
+                self.shoppingCart.push(new Product("More Beeer!!!", 10.99, ["Leo'sss!!!"]));
+            }
         };
 
         self.removeProduct = function (product) {
             self.shoppingCart.remove(product);
         };
 
-        self.getDate = ko.computed(function () {
-           return moment().format('DD/MM/YYYY HH:mm:ss:SSS');
-        });
+        self.getDate = ko.observable(GetDate());
+
+        var dto = {
+            nombre: "Leo",
+            ape: "segars"
+        };
+
+        self.dto = ko.observable(dto);
+
+        self.dtoBeer = {
+            esHabilitado: ko.observable(true),
+            nombre: ko.observable(),
+            precio: ko.observable(),
+        }
 
     };
 
