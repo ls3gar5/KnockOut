@@ -55,8 +55,14 @@
             toastr.info(self.fullName(), "Buenas y santas")
         };
 
-        self.addProduct = function (product) {
-            if (product && typeof !_.isUndefined(product.nombre)) {
+        self.addProduct = function (product,event) {
+
+            if (event.ctrlKey) {
+                toastr.error("Tiene la teckla CTRL presionada.", "Error");
+                return;
+            }
+
+            if (product && !_.isUndefined(product.nombre)) {
                 self.shoppingCart.push(new Product(product.nombre(), product.precio(), ["Leo awesome!!!!"]));
             } else {
                 self.shoppingCart.push(new Product("More Beeer!!!", 10.99, ["Leo'sss!!!"]));
@@ -85,7 +91,7 @@
     };
 
     toastr.options = {
-        "closeButton": true,
+        "closeButton": false,
         "debug": false,
         "newestOnTop": false,
         "progressBar": false,
