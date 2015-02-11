@@ -20,7 +20,6 @@
         self.firstName = ko.observable("Leo");
         self.lastName = ko.observable("Segars");
 
-
         //COMPUTED OBSERVABLES
         self.fullName = ko.computed(function () {
             return self.firstName() + " - " + self.lastName();
@@ -47,15 +46,20 @@
                     total += value;
                 }
             });
-            return total.toFixed(2);
+            return "<strong>" + total.toFixed(2) + "</strong>";
         });
         //METODOS - FUNCIONES
         self.checkOut = function () {
-            self.titulo("Mensaje Enviado!!")
-            toastr.info(self.fullName(), "Buenas y santas")
+            $.blockUI({
+                title: null,
+                message: null,
+                fadeIn: 1000,
+                
+            });
+            toastr.info(self.fullName(), "Buenas y santas");
         };
 
-        self.addProduct = function (product,event) {
+        self.addProduct = function (product, event) {
 
             if (event.ctrlKey) {
                 toastr.error("Tiene la teckla CTRL presionada.", "Error");

@@ -7,13 +7,18 @@
     <link rel="stylesheet" href="../content/style.css" />
     <link rel="stylesheet" href="../content/toastr.css" />
     <link rel="stylesheet" href="../content/font-awesome.css">
+    
     <script type="text/javascript" src="../Scripts/jquery-2.1.3.js"></script>
     <script type="text/javascript" src="../Scripts/knockout-3.2.0.js"></script>
     <script type="text/javascript" src="../Scripts/toastr.js"></script>
     <script type="text/javascript" src="../Scripts/bootstrap.js"></script>
-    <script type="text/javascript" src="../ViewModel/fullIntegration.js"></script>
     <script type="text/javascript" src="../Scripts/moment.js"></script>
     <script type="text/javascript" src="../Scripts/underscore.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.blockUI.js"></script>
+    <script type="text/javascript" src="../Scripts/require.js"></script>
+    <script type="text/javascript" src="../Scripts/durandal/system.js"></script>
+
+    <script type="text/javascript" src="../ViewModel/fullIntegration.js"></script>
 </head>
 <body>
     <h2>Primer Ejercicio</h2>
@@ -47,7 +52,7 @@
                 <button type="button" class="btn btn-success col-sm-12" data-bind="click:addProduct">
                     <i class="fa fa-plus fa-3x"></i>
                     <i class="fa fa-beer fa-3x"></i>
-                    <strong>Total:</strong><span data-bind="text:totalImporte"></span>
+                    <strong>Total:</strong><span data-bind="html:totalImporte"></span>
                 </button>
             </div>
             <div class="col-sm-12">
