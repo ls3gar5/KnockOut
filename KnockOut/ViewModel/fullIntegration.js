@@ -13,10 +13,8 @@
     function PersonViewModel() {
 
         var self = this;
-        //etiquetas
-        self.titulo = ko.observable("Mensaje");;
 
-        //OBSERVABLES
+        self.titulo = ko.observable("Mensaje");;
         self.firstName = ko.observable("Leo");
         self.lastName = ko.observable("Segars");
 
@@ -35,6 +33,7 @@
             return self.shoppingCart().length;
         });
 
+        //METODOS - FUNCIONES
         self.totalImporte = ko.computed(function () {
             var total = 0;
             //ko.utils.arrayForEach(self.shoppingCart(), function (art) {
@@ -48,15 +47,9 @@
             });
             return "<strong>" + total.toFixed(2) + "</strong>";
         });
-        //METODOS - FUNCIONES
+
         self.checkOut = function () {
-            $.blockUI({
-                title: null,
-                message: null,
-                fadeIn: 1000,
-                
-            });
-            toastr.info(self.fullName(), "Buenas y santas");
+            toastr.info(self.fullName(), "Buenas y santas!!!!");
         };
 
         self.addProduct = function (product, event) {
@@ -66,7 +59,7 @@
                 return;
             }
 
-            if (product && !_.isUndefined(product.nombre)) {
+            if (product && !_.isUndefined(product.nombre())) {
                 self.shoppingCart.push(new Product(product.nombre(), product.precio(), ["Leo awesome!!!!"]));
             } else {
                 self.shoppingCart.push(new Product("More Beeer!!!", 10.99, ["Leo'sss!!!"]));
