@@ -49,6 +49,19 @@
         });
 
         self.checkOut = function () {
+            var manager = new breeze.EntityManager('api/northwind');
+
+            var query = new breeze.EntityQuery()
+                .from("Employees")
+                .orderBy("LastName");
+
+            manager.executeQuery(query).then(function (data) {
+                // ko.applyBindings(data);
+                self.fullName(data.first().FirstName)
+            }).fail(function (e) {
+                alert(e);
+            });
+
             toastr.info(self.fullName(), "Buenas y santas!!!!");
         };
 

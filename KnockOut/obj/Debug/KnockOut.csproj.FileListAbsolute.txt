@@ -57,3 +57,9 @@ D:\Google Drive\Soft-IT-Cursos\KnockOutJS\KnockOut_01\KnockOut\bin\KnockOut.pdb
 D:\Google Drive\Soft-IT-Cursos\KnockOutJS\KnockOut_01\KnockOut\obj\Debug\KnockOut.csprojResolveAssemblyReference.cache
 D:\Google Drive\Soft-IT-Cursos\KnockOutJS\KnockOut_01\KnockOut\obj\Debug\KnockOut.dll
 D:\Google Drive\Soft-IT-Cursos\KnockOutJS\KnockOut_01\KnockOut\obj\Debug\KnockOut.pdb
+D:\Soft-IT-Cursos\KnockOutJS\KnockOut_01\KnockOut\bin\KnockOut.dll.config
+D:\Soft-IT-Cursos\KnockOutJS\KnockOut_01\KnockOut\bin\KnockOut.dll
+D:\Soft-IT-Cursos\KnockOutJS\KnockOut_01\KnockOut\bin\KnockOut.pdb
+D:\Soft-IT-Cursos\KnockOutJS\KnockOut_01\KnockOut\obj\Debug\KnockOut.csprojResolveAssemblyReference.cache
+D:\Soft-IT-Cursos\KnockOutJS\KnockOut_01\KnockOut\obj\Debug\KnockOut.dll
+D:\Soft-IT-Cursos\KnockOutJS\KnockOut_01\KnockOut\obj\Debug\KnockOut.pdb
