@@ -63,3 +63,9 @@ D:\Soft-IT-Cursos\KnockOutJS\KnockOut_01\KnockOut\bin\KnockOut.pdb
 D:\Soft-IT-Cursos\KnockOutJS\KnockOut_01\KnockOut\obj\Debug\KnockOut.csprojResolveAssemblyReference.cache
 D:\Soft-IT-Cursos\KnockOutJS\KnockOut_01\KnockOut\obj\Debug\KnockOut.dll
 D:\Soft-IT-Cursos\KnockOutJS\KnockOut_01\KnockOut\obj\Debug\KnockOut.pdb
+E:\KnockOut\KnockOut\bin\KnockOut.dll.config
+E:\KnockOut\KnockOut\bin\KnockOut.dll
+E:\KnockOut\KnockOut\bin\KnockOut.pdb
+E:\KnockOut\KnockOut\obj\Debug\KnockOut.csproj.CoreCompileInputs.cache
+E:\KnockOut\KnockOut\obj\Debug\KnockOut.dll
+E:\KnockOut\KnockOut\obj\Debug\KnockOut.pdb
