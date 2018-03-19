@@ -9,6 +9,12 @@
 *.fsproj merge=union
 *.dbproj merge=union
 
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
 # Standard to msysgit
 *.doc	 diff=astextplain
 *.DOC	 diff=astextplain
